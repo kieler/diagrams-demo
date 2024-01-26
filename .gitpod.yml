@@ -1,0 +1,12 @@
+image:
+  file: dockerfiles/gitpod-base.Dockerfile
+
+tasks:
+  - name: Setup Example
+    init: git clone https://github.com/kieler/models.git models --branch master
+    command: exit
+
+vscode: 
+  extensions:
+    - https://rtsys.informatik.uni-kiel.de/~kieler/files/vsix/keith-vscode.vsix
+    - https://rtsys.informatik.uni-kiel.de/~kieler/files/vsix/klighd-vscode.vsix
